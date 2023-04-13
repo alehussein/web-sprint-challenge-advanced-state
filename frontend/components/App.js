@@ -14,6 +14,7 @@ import { Provider } from 'react-redux'
 import thunk from 'redux-thunk'
 import reducer from '../state/reducer'
 
+
 // REDUX STORE
 let store
 export const resetStore = () => {
@@ -26,7 +27,7 @@ export default function App() {
   return (
     <Provider store={store}>
       <BrowserRouter>
-        <Message />
+        <Message/>
         <h1>Advanced State</h1>
         <nav>
           <NavLink id="wheelLink" to="/">Wheel</NavLink>
